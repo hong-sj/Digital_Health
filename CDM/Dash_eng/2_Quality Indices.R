@@ -5,7 +5,7 @@ library(tidyverse)
 library(lubridate)
 library(reshape2)
 
-setwd('c:/users/hsj28/desktop/cdm-dash/응급실/_result')
+
 #---- Dataset ----
 # Import completed CDM mapping data
 cdm <- read.csv("cdm_mapping.csv")
@@ -172,10 +172,10 @@ rm(index, index1, index2)
 
 #---- 4. Rate of ER Discharge ----
 # check discharge type
-table(df1$discharge_to_source_value)
+table(df$discharge_to_source_value)
 
 # calculate rates
-tmp <- df1 %>% mutate(n=1) %>% group_by(year, mon, discharge_to_source_value) %>% summarise(n1=sum(n)) %>% as.data.frame()
+tmp <- df %>% mutate(n=1) %>% group_by(year, mon, discharge_to_source_value) %>% summarise(n1=sum(n)) %>% as.data.frame()
 tn <- tmp %>% group_by(year, mon) %>% summarise(tn = sum(n1)) %>% as.data.frame();head(tn)
 index <- tmp %>% left_join(tn, by=c('year','mon')) %>% rename(visit_result = discharge_to_source_value)
 index <- index %>% mutate(rate = round(n1/tn*100,2))
@@ -193,10 +193,10 @@ rm(index)
 
 #---- 5. Rate of Hospital Admission ----
 # check discharge type
-table(df1$visit_detail_source_value)
+table(df$visit_detail_source_value)
 
 # calculate rates
-tmp <- df1 %>% filter(discharge_to_source_value=='Hospital admission') %>% 
+tmp <- df %>% filter(discharge_to_source_value=='Hospital admission') %>% 
   mutate(n=1) %>% group_by(year, mon, visit_detail_source_value) %>% summarise(n1=sum(n)) %>% as.data.frame()
 tn <- tmp %>% group_by(year, mon) %>% summarise(tn = sum(n1)) %>% as.data.frame();head(tn)
 index <- tmp %>% left_join(tn, by=c('year','mon')) %>% rename(location = visit_detail_source_value)
