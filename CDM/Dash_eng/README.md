@@ -1,5 +1,5 @@
 
-# < Development of Quality Monitoring System based on Common Data Model with Application to Clinical Quality in Emergency Department >
+# Development of Quality Monitoring System based on Common Data Model with Application to Clinical Quality in Emergency Department
 
 ---
 
@@ -10,6 +10,7 @@ It is necessary to manage the clinical quality indices, especially in emergency 
 
 ## Goal
 •	Development of the algorithm to improve the accuracy of quality indices and efficiency of calculating the indices
+
 •	Development of <Monitoring system of clinical quality indices > to manage the indices at the national level anytime
 
 ---
