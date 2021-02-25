@@ -23,13 +23,13 @@ Below figure indicates the pipeline from the data extraction in an institution t
 1) Data extraction from the data base (DB) in an institution and data preprocessing
 2) Data Mapping based on OMOP CDM Table ([OMOP CDM v5.3.1](https://ohdsi.github.io/CommonDataModel/cdm531.html#omop_cdm_v531)) -> [__1_CDM Mapping.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/1_CDM_Mapping.R)
 3) Building the algorithm for calculation of clinical quality indices -> [__2_Quality Indices.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/2_Quality%20Indices.R)
-4) 4.	Development of the integrated clinical quality dashboard for self-monitoring in the institution [Dashboard](https://monitoring-amia.herokuapp.com/)
+4) Development of the integrated clinical quality dashboard for self-monitoring in the institution. -> [__Dashboard__](https://monitoring-amia.herokuapp.com/)
 
 ---
 
 ## Example index
 
-__Bed occupancy index__ in ED according to the criteria for evaluation of Korean emergency medical institutions in 2020
+__Bed occupancy index__ in ED according to the criteria for evaluation of Korean emergency medical institutions in 2020.
 
 Bed occupancy index = {the sum of staying time form all visiting patients ÷ (the number of beds in criteria * the number of days in each month * 24)} * 100
 
