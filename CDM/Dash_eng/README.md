@@ -22,7 +22,7 @@ Below figure indicates the pipeline from the data extraction in an institution t
 
 1) Data extraction from the data base (DB) in an institution and data preprocessing
 2) Data Mapping based on OMOP CDM Table ([OMOP CDM](https://ohdsi.github.io/CommonDataModel/cdm531.html#omop_cdm_v531)) -> [__1_CDM Mapping.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/1_CDM_Mapping.R)
-3) Building the algorithm for calculation of clinical quality indices [__2_Quality Indices.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/2_Quality%20Indices.R)
+3) Building the algorithm for calculation of clinical quality indices -> [__2_Quality Indices.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/2_Quality%20Indices.R)
 4) 4.	Development of the integrated clinical quality dashboard for self-monitoring in the institution [Dashboard](https://monitoring-amia.herokuapp.com/)
 
 ---
