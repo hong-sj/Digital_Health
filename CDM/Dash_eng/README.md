@@ -46,7 +46,7 @@ Bed occupancy index = {the sum of staying time form all visiting patients ÷ (th
 
 ## Dashboard
 
-![dashboard](https://user-images.githubusercontent.com/28096343/109113959-5d506080-7780-11eb-892a-d589b6d2ade6.png)
+![대시보드화면](https://user-images.githubusercontent.com/28096343/109990747-07b22000-7d4d-11eb-9cb7-74992ff3e6ff.jpg)
 
 ---
 
