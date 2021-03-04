@@ -1,44 +1,57 @@
 
-# < CDM 기반 의료품질 지표 자동 산출 알고리즘 >
-- 의료 제공의 질 향상과 격차 해소를 위한 <알고리즘 플랫폼> 구축
-- 병원-정부부처 간 질 지표 교류 촉진을 위한 <의료 품질 지표 환류 시스템> 구축
+# Development of Quality Monitoring System based on Common Data Model with Application to Clinical Quality in Emergency Department
 
 ---
 
-## 연구 목표
-의료 평가 지표 생성을 위한 CDM Mapping과 의료 질 지표 생성 Script 공유 (R program)
+## Background
+It is necessary to manage the clinical quality indices, especially in emergency department (ED), to establish the better clinical environment and offer patients to high quality healthcare service. However, there have been problems related to efficiency and accuracy because most institutions have managed their indices by hand. Also, it has been difficult to improve the clinical quality continuously and instantly because quality assessment from authorities has been operated on a regular and long-term basis. Therefore, our study aims to develop the monitoring system for clinical quality indices based on common data model (CDM) to offer national regulatory agencies to manage quality indices efficiently with an automatic dashboard under standardized framework at any time.
 
 ---
 
-## 구현 순서
-병원 데이터에서 CDM 변환 및 지표 산출까지의 파이프라인 구축
-1) 병원 DB에서 데이터 추출 및 CDM Table의 형식으로 데이터 클리닝
-2) CDM 기반의 Data Mapping (OMOP CDM Table 구성요소 매칭: [OMOP CDM](https://ohdsi.github.io/CommonDataModel/cdm531.html#omop_cdm_v531))
-3) 의료 질 지표 산출식을 통한 알고리즘 구현
-4) 통합 의료 품질 보고서식을 통한 중앙 시스템으로의 보고 및 기관 내 자가 모니터링
+## Goal
+•	Development of the algorithm to improve the accuracy of quality indices and efficiency of calculating the indices
+
+•	Development of <Monitoring system of clinical quality indices > to manage the indices at the national level anytime
 
 ---
 
-## 구현 예시
-2020년도 응급의료기관 평가 기준집에 따른 __응급실 병상포화지수__ 구현
+## Procedure
 
-Script 내에 병상포화지수 외 장기체류환자지수, 중증응급환자비율(KTAS)도 포함
+Below figure indicates the pipeline from the data extraction in an institution to development of a dashboard.
+![process](https://user-images.githubusercontent.com/28096343/109112997-db136c80-777e-11eb-8c4e-90652f598026.png)
 
-__병상포화지수 = {내원환자의 재실시간의 합 ÷ (기준병상수 * 월별일자수 * 24시간)} * 100__
-
-
-1. 데이터 준비: 실제 구현을 위해선 sample.csv 파일과 동일한 형식의 데이터파일 필요
-
-2. CDM Mapping: 기관 내 정보와 OMOP CDM Table의 구성요소를 이용하여 CDM 변환 진행 (1_CDM_Mapping.R Script 참고)
-
-3. 의료 질 지표 산출: CDM 변환 완료된 데이터를 이용하여 병상포화지수 산출 (2_Quality Indicator.R Script 참고)
+1) Data extraction from the data base (DB) in an institution and data preprocessing
+2) Data Mapping based on OMOP CDM Table ([OMOP CDM v5.3.1](https://ohdsi.github.io/CommonDataModel/cdm531.html#omop_cdm_v531)) -> [__1_CDM Mapping.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/1_CDM_Mapping.R)
+3) Building the algorithm for calculation of clinical quality indices -> [__2_Quality Indices.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/2_Quality%20Indices.R)
+4) Development of the integrated clinical quality dashboard for self-monitoring in the institution. -> [__Dashboard__](https://monitoring-amia.herokuapp.com/)
 
 ---
 
-## 관리 방안
-아래의 사진처럼 산출된 지표들을 토대로 모니터링 용도의 대시보드 구현 가능 (향후 Script 공유)
+## Example index
 
-![대시보드](https://user-images.githubusercontent.com/28096343/100702191-99c02a80-33e4-11eb-955d-8e20faa4e410.png)
+__Bed occupancy index__ in ED according to the criteria for evaluation of Korean emergency medical institutions in 2020.
+
+Bed occupancy index = {the sum of staying time form all visiting patients ÷ (the number of beds in criteria * the number of days in each month * 24)} * 100
 
 
-다른 지표에 대해서도 동일한 방식으로 Script 공유 예정
+1. The preparation of data: the data structure has to be same with __sample.csv__
+
+2. CDM Mapping: the mapping procedure is executed with the OMOP CDM table (__1_CDM_Mapping.R__)
+
+3. The calculation of the quality index: the bed occupancy index is calculated with above the equation by using the data which is mapped by CDM (__2_Quality Indices.R__)
+
+4. Visualization in the dashboard. (This part is preparing. Python script will be distributed in the future)
+
+---
+
+## Dashboard
+
+![dashboard](https://user-images.githubusercontent.com/28096343/109113959-5d506080-7780-11eb-892a-d589b6d2ade6.png)
+
+---
+
+## Expectation
+
+It is expected to improve the clinical environment by developing the monitoring system. It is possible to reduce the clinician’s burden to calculate clinical indices one by one. The accuracy and usability would also increase considerably. In addition, it could be evoked about the need for monitoring system for standardized indices through the establishment of a pipeline that develops monitoring system having same structures.
+
+
