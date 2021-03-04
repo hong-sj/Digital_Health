@@ -1,73 +1,73 @@
 id,birth_date,sex,in_time,out_time,ktas,CC,visit_result,admit_type,visit_type
-1,1948-08-02,F,2019-03-10 08:24:00,2019-03-10 11:13:00,3,Headache,Discharge,NA,Ambulance Visit
-2,1979-05-05,F,2019-08-28 07:27:00,2019-08-28 19:35:00,3,Dyspnea,Hospital admission,Ward,Emergency Room Visit
-3,1999-12-07,F,2019-03-16 14:56:00,2019-03-16 17:54:00,4,Minor trauma,Discharge,NA,Emergency Room Visit
-4,2019-03-14,F,2019-06-14 19:35:00,2019-06-14 21:41:00,3,NA,Patient transfer to another hospital,NA,Ambulance Visit
-5,2018-03-08,M,2019-07-05 08:49:00,2019-07-05 11:48:00,3,NA,Discharge,NA,Emergency Room Visit
-6,1952-08-25,M,2019-12-26 10:01:00,2019-12-26 18:33:00,3,Fever,Discharge,NA,Emergency Room Visit
-7,2017-06-15,M,2019-04-02 18:22:00,2019-04-02 22:10:00,4,NA,Hospital admission,Ward,Ambulance Visit
-8,2008-04-15,M,2019-05-15 18:36:00,2019-05-15 21:35:00,4,NA,Discharge,NA,Emergency Room Visit
-9,2013-01-25,M,2019-09-21 19:35:00,2019-09-22 01:35:00,2,Fever,Hospital admission,Ward,Emergency Room Visit
-10,1987-11-21,M,2019-10-21 19:35:00,2019-10-21 21:20:00,3,Fever,Hospital admission,Ward,Emergency Room Visit
-11,1994-12-07,M,2019-11-14 06:27:00,2019-11-14 15:30:00,3,Fever,Hospital admission,Ward,Emergency Room Visit
-12,2017-10-22,M,2020-06-23 19:41:00,2020-06-23 21:11:00,4,NA,Discharge,NA,Emergency Room Visit
-13,1982-12-23,F,2020-05-24 12:57:00,2020-05-25 00:39:00,4,Abdominal pain,Hospital admission,Operating room,Emergency Room Visit
-14,1989-02-09,F,2020-07-21 10:08:00,2020-07-22 03:57:00,3,Abdominal pain,Hospital admission,Ward,Emergency Room Visit
-15,2016-02-02,F,2018-12-13 22:18:00,2018-12-13 23:10:00,4,Laceration,Discharge,NA,Emergency Room Visit
-16,1943-03-04,F,2018-12-15 12:09:00,2018-12-15 16:40:00,1,DOA,Death,NA,Ambulance Visit
-17,1958-04-07,F,2019-01-16 20:27:00,2019-01-17 19:10:00,3,Fever,Hospital admission,Ward,Ambulance Visit
-18,1992-12-23,F,2020-01-07 11:51:00,2020-01-07 15:23:00,3,General weakness,Discharge,NA,Emergency Room Visit
-19,1973-04-29,M,2020-03-19 03:04:00,2020-03-19 21:01:00,2,Dyspnea,Hospital admission,Ward,Emergency Room Visit
-20,1980-06-14,F,2018-11-13 23:48:00,2018-11-14 01:39:00,3,NA,Discharge,NA,Emergency Room Visit
-21,1966-01-10,F,2018-11-08 13:17:00,2018-11-08 20:10:00,2,Altered mentality,Hospital admission,Intensive Care,Emergency Room Visit
-22,1930-04-18,M,2019-02-12 17:55:00,2019-02-12 21:30:00,4,Headache,Discharge,NA,Emergency Room Visit
-23,1952-01-31,M,2020-09-01 21:36:00,2020-09-02 04:25:00,2,Dysarthria,Hospital admission,Ward,Emergency Room Visit
-24,1985-10-10,F,2019-02-02 14:39:00,2019-02-02 20:33:00,3,Dizziness,Discharge,NA,Emergency Room Visit
-25,2017-01-26,F,2019-12-29 11:20:00,2019-12-29 12:22:00,4,Fever,Discharge,NA,Emergency Room Visit
-26,2010-04-26,M,2019-05-17 11:27:00,2019-05-17 14:21:00,4,Abdominal pain,Discharge,NA,Emergency Room Visit
-27,1987-01-15,F,2019-01-04 03:57:00,2019-01-04 07:12:00,3,NA,Discharge,NA,Emergency Room Visit
-28,1972-10-30,F,2020-11-11 12:33:00,2020-11-12 14:14:00,3,NA,Hospital admission,Ward,Emergency Room Visit
-29,2018-01-27,F,2018-06-15 20:10:00,2018-06-15 20:57:00,5,NA,Discharge,NA,Ambulance Visit
-30,2004-05-30,F,2018-07-18 13:21:00,2018-07-18 21:22:00,4,Fever,Discharge,NA,Ambulance Visit
-31,1944-11-18,F,2018-09-10 12:07:00,2018-09-10 21:07:00,2,Chest discomfort,Hospital admission,Ward,Emergency Room Visit
-32,1982-06-19,M,2018-06-25 17:21:00,2018-06-26 14:52:00,3,Fever,Hospital admission,Ward,Ambulance Visit
-33,2017-05-10,F,2018-05-29 04:14:00,2018-05-29 08:44:00,3,Fever,Discharge,NA,Emergency Room Visit
-34,1978-04-06,F,2018-07-30 09:03:00,2018-07-30 19:36:00,4,Dysuria,Discharge,NA,Emergency Room Visit
-35,2002-01-18,M,2018-05-17 08:58:00,2018-05-17 09:20:00,4,Laceration,Discharge,NA,Emergency Room Visit
-36,2017-04-05,M,2019-07-02 02:43:00,2019-07-02 11:04:00,3,Sz,Discharge,NA,Ambulance Visit
-37,1951-11-03,M,2018-10-16 16:53:00,2018-10-17 11:49:00,3,Dyspnea,Discharge,NA,Ambulance Visit
-38,1960-03-24,F,2019-04-23 21:34:00,2019-04-24 01:02:00,4,NA,Discharge,NA,Ambulance Visit
-39,1990-12-09,M,2018-08-21 06:44:00,2018-08-21 06:53:00,3,Needle stick injury,Discharge,NA,Emergency Room Visit
-40,1933-12-19,F,2018-10-24 17:55:00,2018-10-25 17:05:00,3,Dyspnea,Hospital admission,Ward,Emergency Room Visit
-41,2003-06-23,M,2019-08-25 19:21:00,2019-08-26 02:38:00,4,Abdominal pain,Hospital admission,Ward,Emergency Room Visit
-42,1962-08-22,M,2018-08-03 21:06:00,2018-08-04 01:45:00,3,NA,Discharge,NA,Emergency Room Visit
-43,2018-09-06,M,2020-10-31 21:39:00,2020-11-01 01:55:00,4,NA,Hospital admission,Ward,Emergency Room Visit
-44,1955-04-01,M,2020-02-14 22:42:00,2020-02-15 09:04:00,3,Dizziness,Discharge,NA,Emergency Room Visit
-45,2012-05-17,M,2018-09-26 08:22:00,2018-09-26 12:20:00,4,Abdominal pain,Discharge,NA,Emergency Room Visit
-46,1964-03-13,M,2020-04-05 22:38:00,2020-04-06 11:08:00,3,NA,Discharge,NA,Emergency Room Visit
-47,1951-01-26,F,2019-06-12 10:07:00,2019-06-12 19:50:00,1,DOA,Death,NA,Ambulance Visit
-48,1995-05-25,F,2020-12-15 07:03:00,2020-12-15 07:17:00,5,NA,Discharge,NA,Emergency Room Visit
-49,1994-05-10,M,2020-01-07 02:13:00,2020-01-07 12:43:00,4,NA,Hospital admission,Ward,Emergency Room Visit
-50,1946-11-03,M,2020-08-20 23:47:00,2020-08-27 14:21:00,2,NA,Hospital admission,Ward,Emergency Room Visit
-51,1952-07-06,M,2020-06-29 10:17:00,2020-06-29 18:45:00,3,NA,Discharge,NA,Emergency Room Visit
-52,1981-05-20,F,2019-09-22 11:57:00,2019-09-22 15:00:00,4,Anxiety,Discharge,NA,Emergency Room Visit
-53,1944-10-05,M,2019-11-11 14:09:00,2019-11-11 19:40:00,3,Fever,Hospital admission,Ward,Ambulance Visit
-54,1974-11-01,M,2020-02-05 18:03:00,2020-02-07 18:20:00,3,Dyspnea,Hospital admission,Ward,Ambulance Visit
-55,1949-12-25,M,2019-10-15 13:48:00,2019-10-15 20:26:00,4,NA,Discharge,NA,Emergency Room Visit
-56,1941-06-13,M,2020-07-07 00:36:00,2020-07-07 03:00:00,4,Minor trauma,Discharge,NA,Emergency Room Visit
-57,1994-12-25,F,2020-08-13 10:49:00,2020-08-14 03:48:00,4,NA,Discharge,NA,Emergency Room Visit
-58,1964-12-05,F,2020-03-26 19:49:00,2020-03-27 07:48:00,3,Fever,Discharge,NA,Emergency Room Visit
-59,2000-04-10,F,2020-12-13 18:24:00,2020-12-13 22:35:00,4,Laceration,Discharge,NA,Emergency Room Visit
-60,1972-12-07,F,2020-10-23 20:50:00,2020-10-24 11:40:00,4,Abdominal pain,Discharge,NA,Emergency Room Visit
-61,1962-06-25,F,2020-11-03 01:12:00,2020-11-03 02:39:00,1,DOA,Death,NA,Ambulance Visit
-62,1983-02-17,F,2020-09-19 01:59:00,2020-09-19 05:34:00,4,Occular pain,Discharge,NA,Emergency Room Visit
-63,1972-03-01,M,2020-04-22 19:09:00,2020-04-22 22:41:00,3,NA,Discharge,NA,Emergency Room Visit
-64,1956-03-14,F,2020-05-03 01:42:00,2020-05-03 16:47:00,3,NA,Hospital admission,Ward,Emergency Room Visit
-65,1941-03-10,F,2018-01-02 14:27:00,2018-01-02 23:10:00,3,Dizziness,Discharge,NA,Ambulance Visit
-66,1985-08-07,F,2018-04-28 05:12:00,2018-04-28 07:23:00,3,Fever,Discharge,NA,Emergency Room Visit
-67,1960-10-10,F,2018-04-09 09:55:00,2018-04-09 14:45:00,3,Headache,Hospital admission,Intensive Care,Emergency Room Visit
-68,2002-03-22,F,2018-01-06 22:47:00,2018-01-07 02:07:00,4,Fever,Hospital admission,Ward,Emergency Room Visit
-69,1972-05-02,F,2018-03-01 23:21:00,2018-03-02 01:48:00,4,NA,Discharge,NA,Emergency Room Visit
-70,1984-01-09,F,2018-02-24 18:53:00,2018-02-24 21:32:00,3,Vaginal bleeding,Discharge,NA,Emergency Room Visit
-71,2016-12-13,F,2018-02-25 22:20:00,2018-02-25 23:48:00,4,"Skin rash, urticaria",Discharge,NA,Emergency Room Visit
-72,1947-11-29,M,2018-03-31 21:05:00,2018-04-01 02:57:00,2,Altered mentality,Discharge,NA,Emergency Room Visit
+1,1948-08-02,F,2019-03-10 8:24,2019-03-10 11:13,3,Headache,Patient discharge,NA,Ambulance Visit
+2,1979-05-05,F,2019-08-28 7:27,2019-08-28 19:35,3,Dyspnea,Hospital admission,Ward,Emergency Room Visit
+3,1999-12-07,F,2019-03-16 14:56,2019-03-16 17:54,4,Minor trauma,Patient discharge,NA,Emergency Room Visit
+4,2019-03-14,F,2019-06-14 19:35,2019-06-14 21:41,3,NA,Patient transfer to another hospital,NA,Ambulance Visit
+5,2018-03-08,M,2019-07-05 8:49,2019-07-05 11:48,3,NA,Patient discharge,NA,Emergency Room Visit
+6,1952-08-25,M,2019-12-26 10:01,2019-12-26 18:33,3,Fever,Patient discharge,NA,Emergency Room Visit
+7,2017-06-15,M,2019-04-02 18:22,2019-04-02 22:10,4,NA,Hospital admission,Ward,Ambulance Visit
+8,2008-04-15,M,2019-05-15 18:36,2019-05-15 21:35,4,NA,Patient discharge,NA,Emergency Room Visit
+9,2013-01-25,M,2019-09-21 19:35,2019-09-22 1:35,2,Fever,Hospital admission,Ward,Emergency Room Visit
+10,1987-11-21,M,2019-10-21 19:35,2019-10-21 21:20,3,Fever,Hospital admission,Ward,Emergency Room Visit
+11,1994-12-07,M,2019-11-14 6:27,2019-11-14 15:30,3,Fever,Hospital admission,Ward,Emergency Room Visit
+12,2017-10-22,M,2020-06-23 19:41,2020-06-23 21:11,4,NA,Patient discharge,NA,Emergency Room Visit
+13,1982-12-23,F,2020-05-24 12:57,2020-05-25 0:39,4,Abdominal pain,Hospital admission,Operating room,Emergency Room Visit
+14,1989-02-09,F,2020-07-21 10:08,2020-07-22 3:57,3,Abdominal pain,Hospital admission,Ward,Emergency Room Visit
+15,2016-02-02,F,2018-12-13 22:18,2018-12-13 23:10,4,Laceration,Patient discharge,NA,Emergency Room Visit
+16,1943-03-04,F,2018-12-15 12:09,2018-12-15 16:40,1,DOA,Death,NA,Ambulance Visit
+17,1958-04-07,F,2019-01-16 20:27,2019-01-17 19:10,3,Fever,Hospital admission,Ward,Ambulance Visit
+18,1992-12-23,F,2020-01-07 11:51,2020-01-07 15:23,3,General weakness,Patient discharge,NA,Emergency Room Visit
+19,1973-04-29,M,2020-03-19 3:04,2020-03-19 21:01,2,Dyspnea,Hospital admission,Ward,Emergency Room Visit
+20,1980-06-14,F,2018-11-13 23:48,2018-11-14 1:39,3,NA,Patient discharge,NA,Emergency Room Visit
+21,1966-01-10,F,2018-11-08 13:17,2018-11-08 20:10,2,Altered mentality,Hospital admission,Intensive Care,Emergency Room Visit
+22,1930-04-18,M,2019-02-12 17:55,2019-02-12 21:30,4,Headache,Patient discharge,NA,Emergency Room Visit
+23,1952-01-31,M,2020-09-01 21:36,2020-09-02 4:25,2,Dysarthria,Hospital admission,Ward,Emergency Room Visit
+24,1985-10-10,F,2019-02-02 14:39,2019-02-02 20:33,3,Dizziness,Patient discharge,NA,Emergency Room Visit
+25,2017-01-26,F,2019-12-29 11:20,2019-12-29 12:22,4,Fever,Patient discharge,NA,Emergency Room Visit
+26,2010-04-26,M,2019-05-17 11:27,2019-05-17 14:21,4,Abdominal pain,Patient discharge,NA,Emergency Room Visit
+27,1987-01-15,F,2019-01-04 3:57,2019-01-04 7:12,3,NA,Patient discharge,NA,Emergency Room Visit
+28,1972-10-30,F,2020-11-11 12:33,2020-11-12 14:14,3,NA,Hospital admission,Ward,Emergency Room Visit
+29,2018-01-27,F,2018-06-15 20:10,2018-06-15 20:57,5,NA,Patient discharge,NA,Ambulance Visit
+30,2004-05-30,F,2018-07-18 13:21,2018-07-18 21:22,4,Fever,Patient discharge,NA,Ambulance Visit
+31,1944-11-18,F,2018-09-10 12:07,2018-09-10 21:07,2,Chest discomfort,Hospital admission,Ward,Emergency Room Visit
+32,1982-06-19,M,2018-06-25 17:21,2018-06-26 14:52,3,Fever,Hospital admission,Ward,Ambulance Visit
+33,2017-05-10,F,2018-05-29 4:14,2018-05-29 8:44,3,Fever,Patient discharge,NA,Emergency Room Visit
+34,1978-04-06,F,2018-07-30 9:03,2018-07-30 19:36,4,Dysuria,Patient discharge,NA,Emergency Room Visit
+35,2002-01-18,M,2018-05-17 8:58,2018-05-17 9:20,4,Laceration,Patient discharge,NA,Emergency Room Visit
+36,2017-04-05,M,2019-07-02 2:43,2019-07-02 11:04,3,Sz,Patient discharge,NA,Ambulance Visit
+37,1951-11-03,M,2018-10-16 16:53,2018-10-17 11:49,3,Dyspnea,Patient discharge,NA,Ambulance Visit
+38,1960-03-24,F,2019-04-23 21:34,2019-04-24 1:02,4,NA,Patient discharge,NA,Ambulance Visit
+39,1990-12-09,M,2018-08-21 6:44,2018-08-21 6:53,3,Needle stick injury,Patient discharge,NA,Emergency Room Visit
+40,1933-12-19,F,2018-10-24 17:55,2018-10-25 17:05,3,Dyspnea,Hospital admission,Ward,Emergency Room Visit
+41,2003-06-23,M,2019-08-25 19:21,2019-08-26 2:38,4,Abdominal pain,Hospital admission,Ward,Emergency Room Visit
+42,1962-08-22,M,2018-08-03 21:06,2018-08-04 1:45,3,NA,Patient discharge,NA,Emergency Room Visit
+43,2018-09-06,M,2020-10-31 21:39,2020-11-01 1:55,4,NA,Hospital admission,Ward,Emergency Room Visit
+44,1955-04-01,M,2020-02-14 22:42,2020-02-15 9:04,3,Dizziness,Patient discharge,NA,Emergency Room Visit
+45,2012-05-17,M,2018-09-26 8:22,2018-09-26 12:20,4,Abdominal pain,Patient discharge,NA,Emergency Room Visit
+46,1964-03-13,M,2020-04-05 22:38,2020-04-06 11:08,3,NA,Patient discharge,NA,Emergency Room Visit
+47,1951-01-26,F,2019-06-12 10:07,2019-06-12 19:50,1,DOA,Death,NA,Ambulance Visit
+48,1995-05-25,F,2020-12-15 7:03,2020-12-15 7:17,5,NA,Patient discharge,NA,Emergency Room Visit
+49,1994-05-10,M,2020-01-07 2:13,2020-01-07 12:43,4,NA,Hospital admission,Ward,Emergency Room Visit
+50,1946-11-03,M,2020-08-20 23:47,2020-08-27 14:21,2,NA,Hospital admission,Ward,Emergency Room Visit
+51,1952-07-06,M,2020-06-29 10:17,2020-06-29 18:45,3,NA,Patient discharge,NA,Emergency Room Visit
+52,1981-05-20,F,2019-09-22 11:57,2019-09-22 15:00,4,Anxiety,Patient discharge,NA,Emergency Room Visit
+53,1944-10-05,M,2019-11-11 14:09,2019-11-11 19:40,3,Fever,Hospital admission,Ward,Ambulance Visit
+54,1974-11-01,M,2020-02-05 18:03,2020-02-07 18:20,3,Dyspnea,Hospital admission,Ward,Ambulance Visit
+55,1949-12-25,M,2019-10-15 13:48,2019-10-15 20:26,4,NA,Patient discharge,NA,Emergency Room Visit
+56,1941-06-13,M,2020-07-07 0:36,2020-07-07 3:00,4,Minor trauma,Patient discharge,NA,Emergency Room Visit
+57,1994-12-25,F,2020-08-13 10:49,2020-08-14 3:48,4,NA,Patient discharge,NA,Emergency Room Visit
+58,1964-12-05,F,2020-03-26 19:49,2020-03-27 7:48,3,Fever,Patient discharge,NA,Emergency Room Visit
+59,2000-04-10,F,2020-12-13 18:24,2020-12-13 22:35,4,Laceration,Patient discharge,NA,Emergency Room Visit
+60,1972-12-07,F,2020-10-23 20:50,2020-10-24 11:40,4,Abdominal pain,Patient discharge,NA,Emergency Room Visit
+61,1962-06-25,F,2020-11-03 1:12,2020-11-03 2:39,1,DOA,Death,NA,Ambulance Visit
+62,1983-02-17,F,2020-09-19 1:59,2020-09-19 5:34,4,Occular pain,Patient discharge,NA,Emergency Room Visit
+63,1972-03-01,M,2020-04-22 19:09,2020-04-22 22:41,3,NA,Patient discharge,NA,Emergency Room Visit
+64,1956-03-14,F,2020-05-03 1:42,2020-05-03 16:47,3,NA,Hospital admission,Ward,Emergency Room Visit
+65,1941-03-10,F,2018-01-02 14:27,2018-01-02 23:10,3,Dizziness,Patient discharge,NA,Ambulance Visit
+66,1985-08-07,F,2018-04-28 5:12,2018-04-28 7:23,3,Fever,Patient discharge,NA,Emergency Room Visit
+67,1960-10-10,F,2018-04-09 9:55,2018-04-09 14:45,3,Headache,Hospital admission,Intensive Care,Emergency Room Visit
+68,2002-03-22,F,2018-01-06 22:47,2018-01-07 2:07,4,Fever,Hospital admission,Ward,Emergency Room Visit
+69,1972-05-02,F,2018-03-01 23:21,2018-03-02 1:48,4,NA,Patient discharge,NA,Emergency Room Visit
+70,1984-01-09,F,2018-02-24 18:53,2018-02-24 21:32,3,Vaginal bleeding,Patient discharge,NA,Emergency Room Visit
+71,2016-12-13,F,2018-02-25 22:20,2018-02-25 23:48,4,"Skin rash, urticaria",Patient discharge,NA,Emergency Room Visit
+72,1947-11-29,M,2018-03-31 21:05,2018-04-01 2:57,2,Altered mentality,Patient discharge,NA,Emergency Room Visit
