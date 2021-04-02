@@ -189,11 +189,9 @@ head(index)
 rm(tmp, tn)
 
 # change name shortly
-index$visit_result <- ifelse(index$visit_result=='Patient transfer from hospital to hospital',
-                             'Hospital transfer',
-                             ifelse(index$visit_result=='Hospital patient',
-                                    'Admission',
-                                    index$visit_result))
+index$visit_result <- ifelse(index$visit_result=='Patient transfer from hospital to hospital','Hospital transfer',
+                             ifelse(index$visit_result=='Hospital patient','Admission',
+                                    ifelse(index$visit_result=='Home','Discharge','Death')))
 Discharge<-index
 Discharge
 rm(index)
@@ -215,7 +213,7 @@ rm(tmp, tn)
 
 # change name shortly
 index$location <- ifelse(index$location=='Ward','GW',
-                         ifelse(index$location=='Intensive Care','ICU','OP'))
+                         ifelse(index$location=='Intensive Care','ICU','OR'))
 Admission<-index
 Admission
 rm(index)
