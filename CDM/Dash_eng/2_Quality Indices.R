@@ -163,12 +163,12 @@ k20_r <- round(k20_s / k20[4,3:14]*100,2)
 rm(k20,k20_s)
 # total
 index2 <- as.data.frame(rbind(k18_r,k19_r,k20_r))
-index2 <- index2 %>% mutate(year=c(2018,2019,2020), ot='rate') %>% select(year,ot,1:12)
+index2 <- index2 %>% mutate(year=c(2018,2019,2020), KTAS_Level = 'rate') %>% select(year,KTAS_Level,1:12)
 index2
 rm(k18_r,k19_r,k20_r)
 # concatenate all years
 rownames(index) <- NULL;rownames(index2) <- NULL
-index <- index %>% rename(ot = value_as_number)
+index <- index %>% rename(KTAS_Level = value_as_number)
 KTAS <- rbind(index, index2) %>% arrange(year) %>% as.data.frame()
 KTAS
 
