@@ -5,12 +5,12 @@ library(tidyverse)
 library(lubridate)
 library(readxl)
 
-
+setwd('C:/Users/hsj28/Desktop/CDM-dash/응급실/_data')
 # ===========================
 # mapping : OMOP CDM v5.3.1 
 # ===========================
 #---- Dataset ----
-data_ED <- read.csv("sample.csv")
+data_ED <- read_xlsx("sample.xlsx")
 
 
 #--- Prepare ID ---
@@ -21,7 +21,7 @@ data_ED <- data_ED %>%
 
 #---- PERSON ----
 #1) extract required variables for CDM mapping
-person_db <- data_ED %>% select(c(PT_ID, sex, birth_date)) %>% 
+person_db <- data_ED %>% select(c(PT_ID, sex, birth_Date)) %>% 
   rename(GENDER_SOURCE_VALUE = sex) %>%
   distinct()
 
@@ -35,9 +35,9 @@ join_table_gender <- read_xlsx("join_table/join_table_gender.xlsx")
 PERSON <- person_db %>%
   mutate(person_id = 1:n(), 
          # gender_concept_id = NA,                   # Exist join_table
-         year_of_birth = year(birth_date), 
-         month_of_birth = month(birth_date), 
-         day_of_birth = day(birth_date), 
+         year_of_birth = year(birth_Date), 
+         month_of_birth = month(birth_Date), 
+         day_of_birth = day(birth_Date), 
          birth_datetime = NA, 
          race_concept_id = NA, 
          ethnicity_concept_id = NA, 
@@ -66,9 +66,10 @@ dt <- type_person[type_person$Type == "datetime",]$Field
 i <- type_person[type_person$Type == "integer",]$Field
 c50 <- type_person[type_person$Type == "varchar(50)",]$Field
 
-PERSON[,dt] <- as.POSIXct(PERSON[,dt])
+PERSON[,dt] <- lapply(PERSON[,dt],as.POSIXct)
 PERSON[,i] <- lapply(PERSON[,i], as.integer)
 PERSON[,c50] <- lapply(PERSON[,c50], as.character)
+str(PERSON)
 rm(dt,i,c50,join_table_gender,type_person)
 
 # check patient id after maaping
@@ -137,9 +138,9 @@ c50 <- type_visit[type_visit$Type == "varchar(50)",]$Field
 VISIT_OCCURRENCE[,d] <- lapply(VISIT_OCCURRENCE[,d], as.Date)
 VISIT_OCCURRENCE[,dt] <- lapply(VISIT_OCCURRENCE[,dt], as.POSIXct)
 VISIT_OCCURRENCE[,i] <- lapply(VISIT_OCCURRENCE[,i], as.integer)
-VISIT_OCCURRENCE[,I] <- as.integer(VISIT_OCCURRENCE[,I])
+VISIT_OCCURRENCE[,I] <- lapply(VISIT_OCCURRENCE[,I], as.integer)
 VISIT_OCCURRENCE[,c50] <- lapply(VISIT_OCCURRENCE[,c50], as.character)
-
+str(VISIT_OCCURRENCE)
 rm(d,dt,i,I,c50,join_table_visit,join_table_visit_discharge,type_visit)
 
 
@@ -198,9 +199,9 @@ c50 <- type_cond[type_cond$Type == "varchar(50)",]$Field
 CONDITION_OCCURRENCE[,d] <- lapply(CONDITION_OCCURRENCE[,d], as.Date)
 CONDITION_OCCURRENCE[,dt] <- lapply(CONDITION_OCCURRENCE[,dt], as.POSIXct)
 CONDITION_OCCURRENCE[,i] <- lapply(CONDITION_OCCURRENCE[,i], as.integer)
-CONDITION_OCCURRENCE[,c20] <- as.character(CONDITION_OCCURRENCE[,c20])
+CONDITION_OCCURRENCE[,c20] <- lapply(CONDITION_OCCURRENCE[,c20], as.character)
 CONDITION_OCCURRENCE[,c50] <- lapply(CONDITION_OCCURRENCE[,c50], as.character)
-
+str(CONDITION_OCCURRENCE)
 rm(d,dt,i,c20,c50,join_table_condition,type_cond)
 
 
@@ -261,14 +262,14 @@ I <- type_obs[type_obs$Type == "Integer",]$Field
 c50 <- type_obs[type_obs$Type == "varchar(50)",]$Field
 c60 <- type_obs[type_obs$Type == "varchar(60)",]$Field
 
-OBSERVATION[,d] <- as.Date(OBSERVATION[,d])
-OBSERVATION[,dt] <- as.POSIXct(OBSERVATION[,dt])
-OBSERVATION[,f] <- as.double(OBSERVATION[,f])
+OBSERVATION[,d] <- lapply(OBSERVATION[,d], as.Date)
+OBSERVATION[,dt] <- lapply(OBSERVATION[,dt], as.POSIXct)
+OBSERVATION[,f] <- lapply(OBSERVATION[,f], as.double)
 OBSERVATION[,i] <- lapply(OBSERVATION[,i], as.integer)
-OBSERVATION[,I] <- as.integer(OBSERVATION[,I])
+OBSERVATION[,I] <- lapply(OBSERVATION[,I], as.integer)
 OBSERVATION[,c50] <- lapply(OBSERVATION[,c50], as.character)
-OBSERVATION[,c60] <- as.character(OBSERVATION[,c60])
-
+OBSERVATION[,c60] <- lapply(OBSERVATION[,c60], as.character)
+str(OBSERVATION)
 rm(d,dt,f,i,I,c50,c60,join_table_observation,type_obs)
 
 
@@ -277,7 +278,7 @@ rm(d,dt,f,i,I,c50,c60,join_table_observation,type_obs)
 df <- left_join(PERSON, VISIT_OCCURRENCE,by = intersect(names(PERSON),names(VISIT_OCCURRENCE)))
 df <- left_join(df, CONDITION_OCCURRENCE, by = intersect(names(df),names(CONDITION_OCCURRENCE)))
 df <- left_join(df, OBSERVATION, by = intersect(names(df),names(OBSERVATION)))
-
+str(df)
 
 
 # Save CDM data
