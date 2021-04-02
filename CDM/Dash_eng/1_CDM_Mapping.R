@@ -5,7 +5,7 @@ library(tidyverse)
 library(lubridate)
 library(readxl)
 
-setwd('C:/Users/hsj28/Desktop/CDM-dash/응급실/_data')
+
 # ===========================
 # mapping : OMOP CDM v5.3.1 
 # ===========================
