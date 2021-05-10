@@ -15,10 +15,10 @@
 아래 그림은 기관 내 데이터 추출부터 대시보드 개발까지의 파이프라인을 보여준다.
 ![framework](https://user-images.githubusercontent.com/28096343/117611251-21814080-b19e-11eb-96e7-5e8498877cbf.png)
 
-1) 1.	병원 DB에서 데이터 추출 및 데이터 클리닝
-2) 2.	CDM 기반의 Data Mapping ([OMOP CDM v5.3.1](https://ohdsi.github.io/CommonDataModel/cdm531.html#omop_cdm_v531) 구성요소 매칭) -> [__1_CDM Mapping.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/1_CDM_Mapping.R)
-3) 3.	의료 질 지표 산출식을 통한 알고리즘 구현 -> [__2_Quality Indicator.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/2_Quality%20Indices.R)
-4) 4.	통합 의료 품질 대시보드 개발을 통한 기관 내 자가 모니터링 -> [__Dashboard__](https://monitoring-amia.herokuapp.com/)
+1) 병원 DB에서 데이터 추출 및 데이터 클리닝
+2) CDM 기반의 Data Mapping ([OMOP CDM v5.3.1](https://ohdsi.github.io/CommonDataModel/cdm531.html#omop_cdm_v531) 구성요소 매칭) -> [__1_CDM Mapping.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/1_CDM_Mapping.R)
+3) 의료 질 지표 산출식을 통한 알고리즘 구현 -> [__2_Quality Indicator.R__](https://github.com/hong-sj/Digital_Health/blob/main/CDM/Dash_eng/2_Quality%20Indices.R)
+4) 통합 의료 품질 대시보드 개발을 통한 기관 내 자가 모니터링 -> [__Dashboard__](https://monitoring-amia.herokuapp.com/)
 
 ---
 
