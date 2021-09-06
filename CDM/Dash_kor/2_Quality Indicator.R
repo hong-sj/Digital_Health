@@ -109,7 +109,7 @@ t20 <- dcast(data=t20_,year+ot~month, value.var='value', fill=0)
 rm(a,a18,a19,a20,a18_,a19_,a20_,t18_,t19_,t20_)
 
 # total patients
-tn <- df1 %>% group_by(year, month) %>% summarise(np = length( person_id)) %>% as.data.frame()
+tn <- df1 %>% group_by(year, month) %>% summarise(np = length(visit_occurrence_id)) %>% as.data.frame()
 tnn <- dcast(data=tn,year~month, value.var='np', fill=0)
 tnn <- tnn %>% mutate(ot='all')
 tnn <- tnn%>%select(1,14,2:13)
