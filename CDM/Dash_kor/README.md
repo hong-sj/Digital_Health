@@ -40,7 +40,7 @@ __병상포화지수 = {내원환자의 재실시간의 합 ÷ (기준병상수 
 
 ---
 ## 대시보드
-![dashboard-kor](https://user-images.githubusercontent.com/28096343/118442983-49d0e800-b726-11eb-971d-d40855d288df.jpg)
+![화면2](https://user-images.githubusercontent.com/28096343/139632790-951fc739-07e7-4727-ad63-2ba4d4a78445.jpg)
 
 ---
 
